@@ -1,11 +1,23 @@
 /* 초기화 */
-html, body{
+html, body, ul, li, a{
     bottom: 0;
     margin: 0;
     padding: 0;
     border: 0;
-}
 
+    list-style: none;
+    text-decoration: none;
+    color: #fff;
+}
+ul{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+ul:first-child{
+    white-space: nowrap;
+}
 .스크롤없앰{
     overflow: hidden;
 }
@@ -15,21 +27,28 @@ html, body{
 
 .화면가득{
     width: 100vw; 
+
     background-size: cover;
+
     z-index: 0;
 }
 p{
     position: absolute;
+
+    width: 94vw;
+    height: 18vw; 
+
     padding: 3vw;
-    z-index: 99;
-    color: #fff;
+    
+    top: 14%;  
+
     font-family: "Type1";
     font-weight: 100;
     font-size: 9.4vw;
-    width: 94vw;
+    
     line-height: 1;
-    height: 18vw; 
-    top: 12%;  
+    
+    z-index: 99;
 }
 .p1 {
     text-align: left;
@@ -41,21 +60,43 @@ p{
     
 }
 .header {
-    color: #fff;
-    font-family: "Type2";
-    padding: 2vw;
-    font-size: 2vw;
-    line-height: 1.2;
-
     position: fixed;
+
     width: 100vw;
     height: 5vw;
-    
+
+    padding: 2vw;
+
     top: 0;
+    align-items: center;
+
+    font-family: "Type2";
+    font-size: 2vw;
+    
     z-index: 999999;
 }
-.lowerText{
-    top: 500%;
-    padding-left: 2%;
+.logo{
+    padding-left: 1.7%;
+}
+.smallText{
     position: absolute;
+
+    width: 14vw;
+
+    padding-right: 3.8%;
+    top: 20%;
+    right: 3.4%;
+
+    font-size: 0.8vw;
+    text-transform: uppercase;
+}
+.lowerText{
+    position: absolute;
+
+    padding-left: 3.8%;
+
+    top: 86%;
+
+    font-family: "Type3";
+    font-size: 1.2vw;
 }
