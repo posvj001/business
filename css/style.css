@@ -28,17 +28,17 @@ p{
     font-size: 9.4vw;
     width: 94vw;
     line-height: 1;
-    bottom: 11.5vw;
-    height: 18vw;   
+    height: 18vw; 
+    top: 12%;  
 }
 .p1 {
     text-align: left;
-    top: 0;
+    
 }
 .p2 {
     padding-top: 15%;
     text-align: right;
-    top: 0;
+    
 }
 .header {
     color: #fff;
@@ -53,4 +53,9 @@ p{
     
     top: 0;
     z-index: 999999;
+}
+.lowerText{
+    top: 500%;
+    padding-left: 2%;
+    position: absolute;
 }
