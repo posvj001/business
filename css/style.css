@@ -14,9 +14,23 @@ ul{
     flex-wrap: nowrap;
     justify-content: space-between;
     align-items: center;
+    
 }
 ul:first-child{
     white-space: nowrap;
+}
+li{
+    color: #000;
+}
+
+.박스화{
+    border: #000 solid 0.1vw;
+}
+.아래공간{
+    margin-bottom: 1vw;
+}
+.박스여백{
+    padding: 1vw;
 }
 .스크롤없앰{
     overflow: hidden;
@@ -32,7 +46,7 @@ ul:first-child{
 
     z-index: 0;
 }
-p{
+.pTitle{
     position: absolute;
 
     width: 94vw;
@@ -95,8 +109,32 @@ p{
 
     padding-left: 3.8%;
 
-    top: 92%;
+    top: 86%;
 
     font-family: "Type3";
     font-size: 1.2vw;
+}
+.modal{
+    display: none;
+}
+.header:hover .modal{
+   display: block;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+
+   width: 1200px;
+   height: 800px;
+   padding: 40px;
+    
+   text-align: left;
+   font-size: 0.8vw;
+   font-family: "type3";
+   color: #000;
+
+   background-color: #f0f0f0;
+   border-radius: 10px;
+   box-shadow:  0 10px 10px 0 #000;
+
+   transform: translateX(-50%) translateY(-5%);
 }
